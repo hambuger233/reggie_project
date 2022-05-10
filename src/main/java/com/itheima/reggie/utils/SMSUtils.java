@@ -68,17 +68,17 @@ public class SMSUtils {
 
         /* 短信应用ID: 短信SdkAppId在 [短信控制台] 添加应用后生成的实际SdkAppId，示例如1400006666 */
         // 应用 ID 可前往 [短信控制台](https://console.cloud.tencent.com/smsv2/app-manage) 查看
-        String sdkAppId = "1400676969";
+        String sdkAppId = "";
         req.setSmsSdkAppId(sdkAppId);
 
         /* 短信签名内容: 使用 UTF-8 编码，必须填写已审核通过的签名 */
         // 签名信息可前往 [国内短信](https://console.cloud.tencent.com/smsv2/csms-sign) 或 [国际/港澳台短信](https://console.cloud.tencent.com/smsv2/isms-sign) 的签名管理查看
-        String signName = "万能的小林";
+        String signName = "";
         req.setSignName(signName);
 
         /* 模板 ID: 必须填写已审核通过的模板 ID */
         // 模板 ID 可前往 [国内短信](https://console.cloud.tencent.com/smsv2/csms-template) 或 [国际/港澳台短信](https://console.cloud.tencent.com/smsv2/isms-template) 的正文模板管理查看
-        String templateId = "1396750";
+        String templateId = "";
         req.setTemplateId(templateId);
 
         /* 模板参数: 模板参数的个数需要与 TemplateId 对应模板的变量个数保持一致，若无模板参数，则设置为空 */
