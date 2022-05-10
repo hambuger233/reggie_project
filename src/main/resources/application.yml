@@ -1,0 +1,29 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: reggie_take_out
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/reggie?useSSL=true&characterEncoding=utf-8
+      username: root
+      password: mysql
+  main:
+    allow-circular-references: true
+mybatis-plus:
+  configuration:
+    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: assign_id
+
+reggie:
+  path: D:\www\
+
+#message:
+#  secretId: AKIDDE0UjhNmumNhkY4JGxNaWBaiY7Qp3231
+#  secretKey: nV9j8G8pR3atvhCQN3SaR1KM7bokPr41
+
